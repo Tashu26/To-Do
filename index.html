@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do...</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/1828/1828651.svg" type="image/x-icon">
+</head>
+<body>
+  
+<h1>Tasks To Do...</h1>
+<input id="task" type="text" placeholder="Task..." maxlength="30" size="30"><button onclick="addTask()" id="dd">Add</button>
+
+<div id="list">
+    <br>
+   <div   class="margin" >
+     <input type="checkbox" onchange="check(this)" name="book" class="box"  > <label  class="item" for="book">Read book</label>
+    </div><br>
+    <div   class="margin">
+     <input type="checkbox" onchange="check(this)" name="park" class="box">  <label  class="item"   for="park">Go to park</label>
+    </div><br>
+   
+</div>
+               <button id="ac" onclick="removeAll()">Clear all tasks</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
